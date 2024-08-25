@@ -1,38 +1,5 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-    .p-1 {
-        font-family: "Archivo", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-size: 5rem;
-        background: #5773CF;
-        background: linear-gradient(to right, #5773CF 20%, #1FCFBD 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-            }
-            .pointed-arrow-line-right {
-        display: inline-block;
-        position: relative;
-        height: 2px; /* Thickness of the line */
-        width: 100px; /* Length of the line */
-        background-color: white;
-}
-
-.pointed-arrow-line-right::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -10px; /* Adjust to position the arrowhead */
-  transform: translateY(-50%);
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 12px solid white;
-}
-.vh-70 {
-    height: 70vh;
-}
-/* The actual timeline (the vertical ruler) */
-.main-timeline-5 {
+  .main-timeline-5 {
   position: relative;
   max-width: 50%;
   margin: 0 auto;
@@ -94,51 +61,56 @@
     right: -5px; /* Adjust this value to position the circle properly */
     left: auto; /* Override the default left positioning */
 }
-
-
-@media (max-width: 991px) {
+@media (max-width: 576px) {
   .main-timeline-5 {
     max-width: 100%;
   }
+
 }
 
 </style>
-<x-layout title="Experience">
-    <div class="container vh-70 d-flex just-content-end align-items-end"">
-        <div class="row">
-            <div class="col d-flex just-content-end align-items-end"">
-                <div class="p-1">Work experience</div>
-            </div>
-            <div class="col-2 d-flex just-content-end align-items-end mb-5"><div class="pointed-arrow-line-right"></div>
 
-        </div>
-            <div class="col-4 d-flex just-content-end align-items-end mb-2 fs-5">Feel free to send me an email or schedule a free consultation with me.
+</style>
 
-                bryllim@gmail.com</div>
+<x-layout title="experience">
+  <div class="container vh-70 d-flex just-content-end align-items-end"">
+    <div class="row">
+        <div class="col-lg-6 d-flex just-content-end align-items-end"">
+            <div class="p-1">Career Journey</div>
         </div>
+        
+        <div class="col-lg-2 col-md-2 col-2 d-flex just-content-end align-items-end mb-5 ">
+            <div class="pointed-arrow-line-right"></div>
+
     </div>
-    <div class=" ">
-        <section class="gradient-custom-5">
-            <div class="container py-5">
-              <div class="main-timeline-5">
-                <div class="timeline-5 right-5">
-                  <div class="card">
-                    <div class="card-body p-4">
-                        <div class="header d-flex justify-content-between">
-                            <h5>Makerspace Innovhub</h5> <span class="small text-muted"><i class="fas fa-clock me-1"></i>07 August, 2024</span>
-                        </div>
-                    
-                      <div class="position">Dev Role: <span>Backend Developer</span></div>
-                      <p class="mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque
-                        diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis
-                        sagittis ligula in sodales vehicula....</p>
+        <div class="col-lg-4 col-md-4 col d-flex just-content-end align-items-end mb-2 fs-lg-3 fs-md-5 fs-5">Explore the projects that define my coding expertise.</div>
+    </div>
+    
+</div>
+</div>
+<div class="py-4">
+    <section class="gradient-custom-5">
+        <div class="container py-lg-5 py-md-5 py-1">
+          <div class="main-timeline-5">
+            <div class="timeline-5 right-5">
+              <div class="card">
+                <div class="card-body p-4">
+                    <div class="header d-flex justify-content-between">
+                        <h5>Makerspace Innovhub</h5> <span class="small text-muted"><i class="fas fa-clock me-1"></i>07 August, 2024</span>
                     </div>
-                  </div>
-                </div>
                 
+                  <div class="position">Dev Role: <span>Backend Developer</span></div>
+                  <p class="mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque
+                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis
+                    sagittis ligula in sodales vehicula....</p>
                 </div>
               </div>
             </div>
-          </section>
-    </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+</div>
+
 </x-layout>

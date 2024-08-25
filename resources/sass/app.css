@@ -4,6 +4,37 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .p-1 {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 5rem;
+  background: #5773CF;
+  background: linear-gradient(to right, #5773CF 20%, #1FCFBD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+      }
+      .pointed-arrow-line-right {
+  display: inline-block;
+  position: relative;
+  height: 2px; /* Thickness of the line */
+  width: 100px; /* Length of the line */
+  background-color: white;
+}
+.pointed-arrow-line-right::after {
+content: '';
+position: absolute;
+top: 50%;
+right: -10px; /* Adjust to position the arrowhead */
+transform: translateY(-50%);
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-left: 12px solid white;
+}
+
+
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;

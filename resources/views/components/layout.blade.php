@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Experienced backend developer specializing in creating scalable server-side solutions using PHP and JavaScript.">
+    <meta name="keywords" content="Ivan Christian Dumalanta, ivancreates, Ivan, backend developer, Dumalanta">
+    <meta name="author" content="Your Name">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
     <title>{{$title}}</title>
     @vite(['resources/sass/app.css', 'resources/js/app.js'])
@@ -21,10 +24,12 @@
     }
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg m-5 ">
-        <div class="container ">
+    <nav class="navbar navbar-expand-lg m-5 m-lg-5 m-md-5 mx-4">
+        <div class="container-fluid lg-container md-container">
           <div class="log">
-            <x-navbar href="/" :active="request()->is('Home')">ICD</x-navbar>
+            <x-navbar href="/" :active="request()->is('Home')">
+              <img src="{{ asset('img/my-logo.svg') }}" alt="" width="50" height="44">
+            </x-navbar>
             
           </div>
           <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
